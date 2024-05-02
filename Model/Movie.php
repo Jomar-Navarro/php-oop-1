@@ -8,7 +8,7 @@ class Movie
   public $vote;
 
 
-  public function __construct(string $_title, int $_year, string $_genre, int $_vote)
+  public function __construct(string $_title, int $_year, array $_genre, int $_vote)
   {
     $this->title = $_title;
     $this->year = $_year;
