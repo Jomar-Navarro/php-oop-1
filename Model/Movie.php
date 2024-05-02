@@ -15,4 +15,9 @@ class Movie
     $this->genre = $_genre;
     $this->vote = $_vote;
   }
+
+  public function getFullMovie()
+  {
+    echo "{$this->title}, {$this->year}, {$this->genre}, {$this->vote}";
+  }
 }
