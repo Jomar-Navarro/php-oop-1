@@ -18,6 +18,7 @@ class Movie
 
   public function getFullMovie()
   {
+    $genres = implode(", ", $this->genre);
     echo "{$this->title}, {$this->year}, {$this->genre}, {$this->vote}";
   }
 }

@@ -40,9 +40,7 @@ $AgeOfUltron = new Movie('Avengers: Age of Ultron', 2008, ['Action', 'Adventure'
           <h6 class="card-subtitle mb-2 text-body-secondary">
             <?php echo $IronMan->year ?>
           </h6>
-          <?php foreach ($IronMan->genre as $genre) : ?>
-            <p class="card-text"><?php echo $genre ?></p>
-          <?php endforeach ?>
+          <p class="card-text"><?php echo implode(", ", $IronMan->genre) ?></p>
           <p class="card-text"><?php echo $IronMan->vote ?></p>
         </div>
       </div>
@@ -53,9 +51,7 @@ $AgeOfUltron = new Movie('Avengers: Age of Ultron', 2008, ['Action', 'Adventure'
           <h6 class="card-subtitle mb-2 text-body-secondary">
             <?php echo $IronManTwo->year ?>
           </h6>
-          <?php foreach ($IronManTwo->genre as $genre) : ?>
-            <p class="card-text"><?php echo $genre ?></p>
-          <?php endforeach ?>
+          <p class="card-text"><?php echo implode(", ", $IronManTwo->genre) ?></p>
           <p class="card-text"><?php echo $IronManTwo->vote ?></p>
         </div>
       </div>
@@ -66,9 +62,7 @@ $AgeOfUltron = new Movie('Avengers: Age of Ultron', 2008, ['Action', 'Adventure'
           <h6 class="card-subtitle mb-2 text-body-secondary">
             <?php echo $IronManThree->year ?>
           </h6>
-          <?php foreach ($IronManThree->genre as $genre) : ?>
-            <p class="card-text"><?php echo $genre ?></p>
-          <?php endforeach ?>
+          <p class="card-text"><?php echo implode(", ", $IronManThree->genre) ?></p>
           <p class="card-text"><?php echo $IronManThree->vote ?></p>
         </div>
       </div>
@@ -79,9 +73,7 @@ $AgeOfUltron = new Movie('Avengers: Age of Ultron', 2008, ['Action', 'Adventure'
           <h6 class="card-subtitle mb-2 text-body-secondary">
             <?php echo $Avengers->year ?>
           </h6>
-          <?php foreach ($Avengers->genre as $genre) : ?>
-            <p class="card-text"><?php echo $genre ?></p>
-          <?php endforeach ?>
+          <p class="card-text"><?php echo implode(", ", $Avengers->genre) ?></p>
           <p class="card-text"><?php echo $Avengers->vote ?></p>
         </div>
       </div>
@@ -92,9 +84,7 @@ $AgeOfUltron = new Movie('Avengers: Age of Ultron', 2008, ['Action', 'Adventure'
           <h6 class="card-subtitle mb-2 text-body-secondary">
             <?php echo $AgeOfUltron->year ?>
           </h6>
-          <?php foreach ($AgeOfUltron->genre as $genre) : ?>
-            <p class="card-text"><?php echo $genre ?></p>
-          <?php endforeach ?>
+          <p class="card-text"><?php echo implode(", ", $AgeOfUltron->genre) ?></p>
           <p class="card-text"><?php echo $AgeOfUltron->vote ?></p>
         </div>
       </div>
